@@ -1,0 +1,33 @@
+#map {
+	height: 400px;
+	width: 400px;
+}
+
+h1{
+	font-family: Arial, Helvetica, sans-serif;	 
+}
+button{
+    
+	height: 80px;
+	background-color: blue;
+    font-size: 1.4rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 4px 40px;
+    margin-top: 4rem;
+    cursor: pointer;
+    -webkit-box-shadow: -4px -6px 40px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px -6px 40px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px -6px 40px -15px rgba(0, 0, 0, 0.75);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
