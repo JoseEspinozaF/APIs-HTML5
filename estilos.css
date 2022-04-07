@@ -1,15 +1,16 @@
 #map {
-	height: 400px;
-	width: 400px;
+    height: 400px;
+    width: 400px;
 }
 
-h1{
-	font-family: Arial, Helvetica, sans-serif;	 
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
 }
-button{
-    
-	height: 80px;
-	background-color: blue;
+
+button {
+
+    height: 80px;
+    background-color: blue;
     font-size: 1.4rem;
     color: white;
     border: none;
@@ -25,9 +26,42 @@ button{
     -moz-box-shadow: -4px -6px 40px -15px rgba(0, 0, 0, 0.75);
     box-shadow: -4px -6px 40px -15px rgba(0, 0, 0, 0.75);
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*drag and drop*/
+.dragAndDrop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dragAndDrop .container-objects{
+    display: flex;
+    justify-content: space-between;
+}
+.dragAndDrop .container-objects img{
+    margin: 80px;
+    width: 200px;
+    border: solid 1px;
+}
+
+.dragAndDrop .container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.dragAndDrop .container div{
+    border: solid 1px;
+    width: 400px;
+    height: 400px;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
 }

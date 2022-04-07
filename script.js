@@ -50,3 +50,9 @@ function MostrarPosicion(position) {
     });
 
 }
+
+function dragable() {
+    while (true) {
+        document.getElementById("div1").innerHTML="<img src='img/boton-x.png' draggable='true' ondragstart='drag(event)' id='drag1' width='88' height='31'>"
+    }
+}

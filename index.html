@@ -16,6 +16,48 @@
         <div id="map"></div>
         <div id="mapLatitudeLongitude"></div>
     </div>
+    <div class="dragAndDrop">
+        <h2>Drag and Drop</h2>
+        <div class="container-objects">
+            <img class="moto" draggable="true" src="img/moto.png" alt="moto"><br>
+            <img class="coche" draggable="true" src="img/coche.png" alt="">
+            <img class="bici" draggable="true" src="img/bicicleta.png" alt="">
+        </div>
+        <div class="container">
+            <div class="auto">Arrastra aqui el coche</div>
+            <div class="motorbike">Arrastra aqui la moto</div>
+            <div class="bike">Arrastra aqui la bicicleta</div>
+        </div>
+    </div>
+    <script>
+        const auto = document.querySelector('.coche')
+        const moto = document.querySelector('.moto')
+        const bici = document.querySelector('.bici')
+        const coche = document.querySelector(".auto")
+        const bike = document.querySelector(".bike")
+        const motorbike = document.querySelector(".motorbike")
+
+        //con esta funcion lo que hacemos es prevenir este comportamiento por defecto, este evento dragover
+        coche.addEventListener('dragover', e => {
+            e.preventDefault()
+        })
+        coche.addEventListener('drop', e => {
+            coche.appendChild(auto)
+        })
+        bike.addEventListener('dragover', e => {
+            e.preventDefault()
+        })
+        bike.addEventListener('drop', e => {
+            bike.appendChild(bici)
+        })
+        motorbike.addEventListener('dragover', e => {
+            e.preventDefault()
+        })
+        motorbike.addEventListener('drop', e => {
+            motorbike.appendChild(moto)
+        })
+        
+    </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik">
     </script>
